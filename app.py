@@ -103,6 +103,10 @@ def load_or_create_vectordb():
 vectordb = load_or_create_vectordb()
 
 # ===================== Chatbot API =====================
+@app.get("/")
+async def health_check():
+    return "The health check success!"
+
 
 @app.post("/chat/")
 async def chat(request: QueryRequest, background_tasks: BackgroundTasks):

@@ -1,0 +1,6 @@
+fastapi
+dotenv
+langchain_openai
+langchain_community
+langchain
+openai

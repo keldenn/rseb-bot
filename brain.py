@@ -36,7 +36,7 @@ def get_pdf_hash(filepath: str) -> str:
             hasher.update(chunk)
     return hasher.hexdigest()
 
-def load_pdfs_from_backend(pdf_folder=r"D:\Chatbot using RAG Model\backend\pdfs"):
+def load_pdfs_from_backend(pdf_folder=r"pdfs"):
     """Load PDF file paths and filenames from the backend folder."""
     pdf_files, pdf_filenames = [], []
     for filename in os.listdir(pdf_folder):
